@@ -20,13 +20,21 @@ document.addEventListener('keydown', function (event) {
     let num2 = num2Mass.join('')
     console.log(num2)
     if(action == '-'){
-      alert(num1-num2)
+      let num = num1-num2
+      document.getElementById('num').innerHTML = num;
     }else if(action == '/'){
-      alert(num1/num2)
+      let num = num1/num2
+      document.getElementById('num').innerHTML = num;
     }else if(action == '+'){
-      alert(Number(num1)+Number(num2))
+      let num = Number(num1)+Number(num2)
+      document.getElementById('num').innerHTML = num;
     }else if(action == '*'){
-      alert(num1*num2)
+      let num = num1*num2
+      document.getElementById('num').innerHTML = num;
+    }else{
+      let num = '||Uncorrect Action||'
+      document.getElementById('num').innerHTML = num;
     }
+    
   }
 })
