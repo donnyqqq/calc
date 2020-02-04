@@ -32,7 +32,7 @@ document.addEventListener('keydown', function (event) {
       let num = num1*num2
       document.getElementById('num').innerHTML = num;
     }else{
-      let num = '||Uncorrect Action||'
+      let num = '||Incorrect Action||'
       document.getElementById('num').innerHTML = num;
     }
     
