@@ -44,7 +44,7 @@ document.addEventListener('keydown', function (event) {
     }else{
       let num = '||Incorrect Action||'
       document.getElementById('num').innerHTML = num;
-      if(num = NaN){
+      if(num == NaN){
         document.getElementById('num').innerHTML = '<strong>ERROR</strong>'
       }
     }
