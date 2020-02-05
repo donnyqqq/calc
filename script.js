@@ -19,22 +19,34 @@ document.addEventListener('keydown', function (event) {
     }
     let num2 = num2Mass.join('')
     console.log(num2)
+    let num;
     if(action == '-'){
       let num = num1-num2
       document.getElementById('num').innerHTML = num;
     }else if(action == '/'){
       let num = num1/num2
       document.getElementById('num').innerHTML = num;
+      if(num = NaN){
+        document.getElementById('num').innerHTML = '<strong>ERROR</strong>'
+      }
     }else if(action == '+'){
       let num = Number(num1)+Number(num2)
       document.getElementById('num').innerHTML = num;
+      if(num = NaN){
+        document.getElementById('num').innerHTML = '<strong>ERROR</strong>'
+      }
     }else if(action == '*'){
       let num = num1*num2
       document.getElementById('num').innerHTML = num;
+       if(num = NaN){
+      document.getElementById('num').innerHTML = '<strong>ERROR</strong>'
+    }
     }else{
       let num = '||Incorrect Action||'
       document.getElementById('num').innerHTML = num;
+      if(num = NaN){
+        document.getElementById('num').innerHTML = '<strong>ERROR</strong>'
+      }
     }
-    
   }
 })
