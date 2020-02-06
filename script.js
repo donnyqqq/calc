@@ -22,30 +22,38 @@ document.addEventListener('keydown', function (event) {
     let num;
     if(action == '-'){
       let num = num1-num2
+      if(num === NaN){
+        document.getElementById('num').innerHTML = '<strong>ERROR</strong>'
+      }else{
       document.getElementById('num').innerHTML = num;
+      }
     }else if(action == '/'){
       let num = num1/num2
-      document.getElementById('num').innerHTML = num;
-      if(num = NaN){
+      if(num === NaN){
         document.getElementById('num').innerHTML = '<strong>ERROR</strong>'
+      }else{
+      document.getElementById('num').innerHTML = num;
       }
     }else if(action == '+'){
       let num = Number(num1)+Number(num2)
-      document.getElementById('num').innerHTML = num;
-      if(num = NaN){
+      if(num === NaN){
         document.getElementById('num').innerHTML = '<strong>ERROR</strong>'
+      }else{
+      document.getElementById('num').innerHTML = num;
       }
     }else if(action == '*'){
       let num = num1*num2
+      if(num === NaN){
+        document.getElementById('num').innerHTML = '<strong>ERROR</strong>'
+      }else{
       document.getElementById('num').innerHTML = num;
-       if(num = NaN){
-      document.getElementById('num').innerHTML = '<strong>ERROR</strong>'
-    }
+      }
     }else{
       let num = '||Incorrect Action||'
-      document.getElementById('num').innerHTML = num;
-      if(num == NaN){
+      if(num === NaN){
         document.getElementById('num').innerHTML = '<strong>ERROR</strong>'
+      }else{
+      document.getElementById('num').innerHTML = num;
       }
     }
   }
