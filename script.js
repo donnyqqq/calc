@@ -12,14 +12,11 @@ document.addEventListener('keydown', function (event) {
       num1Mass.push(calc[actionIndxSTPT])
     }
     let num1 = num1Mass.reverse().join('')
-    console.log(num1)
     let num2Mass = []
     for (let actionIndxSTPT = calc.indexOf(action) + 1; actionIndxSTPT != calc.length; actionIndxSTPT++) { 
       num2Mass.push(calc[actionIndxSTPT])
     }
     let num2 = num2Mass.join('')
-    console.log(num2)
-    let num;
     if(action == '-'){
       let num = num1-num2
       if(num === NaN){
